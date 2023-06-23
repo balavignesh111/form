@@ -3,6 +3,7 @@
 :root{
   --clr-blue: #1B5299;
   --clr-red: red;
+  --clr-green: rgb(5, 207, 5);
 }
 *{
   margin: 0;
@@ -24,7 +25,7 @@ body{
   justify-content: center;
   align-items: center;
 }
-
+/* form */
 .form-container{
   background-color: white;
   width: 25rem;
@@ -34,7 +35,7 @@ body{
   justify-content: flex-start;
   gap: 0.5rem;
 }
-
+/* heading of form */
 .form-title{
   font-size: 1.3rem;
   font-weight: 500;
@@ -44,19 +45,19 @@ body{
   border-bottom: 2px solid var(--clr-blue);
   margin-bottom: 0.5rem;
 }
-
+/* width of btn & i/p element */
 .form-input input, button{
   width: 100%;
   border-radius: 5px;
 }
-
+/* form input container which has label, i/p and messages */
 .form-input{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.5rem;
 }
-
+/* input element */
 input{
   font-size: 1.0rem;
   padding: 0.75rem 1.25rem;
@@ -66,6 +67,7 @@ input{
 
 small{
   visibility: hidden;
+  margin-left: 1.2rem;
 }
 
 .submitButton{
@@ -75,4 +77,20 @@ small{
   font-weight: 900;
   font-size: 1rem;
   height: 2.5rem;
+}
+
+.form-input.success input{
+  border-color: var(--clr-green);
+}
+
+.form-input.success small{
+  color: var(--clr-green);
+}
+/* error message clr change */
+.form-input.error input{
+  border-color: var(--clr-red);
+}
+
+.form-input.error small{
+  color: var(--clr-red);
 }

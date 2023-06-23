@@ -11,25 +11,24 @@
     <h1 class="form-title">Registration Form</h1>
     <div class="form-input">
       <label for="username">Username</label>
-    <input
-     type="text" 
-     name="username" 
-     id="username" 
-     class="inputUsername"
-     placeholder="Enter your Username"
-     required>
-    <small class="userNameErrorMsg">should be small</small>
+      <input
+        type="text" 
+        name="username" 
+        id="username" 
+        class="inputUsername"
+        placeholder="Enter your Username"
+        required>
+      <small class="userNameErrorMsg">should be small</small>
     </div>
     <div class="form-input">
       <label for="email">Email</label>
       <input 
-      type="email"
-      name="email" 
-      id="email" 
-      class="inputEmail"
-      placeholder="Enter your Email"
-      required>
-      <small class="emailErrorMsg">should be small</small>
+        type="text"
+        name="email" 
+        id="email" 
+        class="inputEmail"
+        placeholder="Enter your Email">
+        <small class="emailErrorMsg">should be small</small>
     </div>
     <div class="form-input">
       <label for="password">Password</label>
@@ -38,16 +37,17 @@
       required>
       <small class="passwordErrorMsg">should be small</small>
     </div>
-    <!-- <div class="form-input">
-      <label for="retypePassword">Retype Password</label>
-      <input type="password" name="password" id="retypePassword" class="inputPassword"
+    <div class="form-input">
+      <label for="confirmPassword">Confirm  Password</label>
+      <input type="password" name="password" id="confirmPassword" class="inputPassword"
       placeholder="Re-Enter your Password"
       required>
-      <small class="reTypePasswordErrorMsg">should be small</small>
-    </div> -->
+      <small class="confirmPasswordErrorMsg">should be small</small>
+    </div>
     <div class="form-input">
       <button type="submit" class="submitButton">Submit</button>
     </div>
   </form>
+  <script src="./script.js"></script>
 </body>
 </html>
