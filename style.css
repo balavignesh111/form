@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+  --clr-blue: #1B5299;
+  --clr-red: red;
+}
 *{
   margin: 0;
   padding: 0;
@@ -9,6 +15,64 @@ html{
 }
 
 body{
+  background-color: var(--clr-blue);
+  font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container{
+  background-color: white;
+  width: 25rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.form-title{
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  align-self: center;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--clr-blue);
+  margin-bottom: 0.5rem;
+}
+
+.form-input input, button{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+input{
+  font-size: 1.0rem;
+  padding: 0.75rem 1.25rem;
+  outline: none;
+  border: 2px solid var(--clr-blue);
+}
+
+small{
+  visibility: hidden;
+}
+
+.submitButton{
+  color: white;
+  background-color: var(--clr-blue);
+  border: 1px solid var(--clr-blue);
+  font-weight: 900;
+  font-size: 1rem;
+  height: 2.5rem;
 }

@@ -7,22 +7,47 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="form-container">
+  <form class="form-container">
+    <h1 class="form-title">Registration Form</h1>
     <div class="form-input">
       <label for="username">Username</label>
-    <input type="text" name="username" id="username">
+    <input
+     type="text" 
+     name="username" 
+     id="username" 
+     class="inputUsername"
+     placeholder="Enter your Username"
+     required>
+    <small class="userNameErrorMsg">should be small</small>
+    </div>
+    <div class="form-input">
+      <label for="email">Email</label>
+      <input 
+      type="email"
+      name="email" 
+      id="email" 
+      class="inputEmail"
+      placeholder="Enter your Email"
+      required>
+      <small class="emailErrorMsg">should be small</small>
     </div>
     <div class="form-input">
       <label for="password">Password</label>
-      <input type="password" name="password" id="password">
+      <input type="password" name="password" id="password" class="inputPassword"
+      placeholder="Enter your Password"
+      required>
+      <small class="passwordErrorMsg">should be small</small>
     </div>
+    <!-- <div class="form-input">
+      <label for="retypePassword">Retype Password</label>
+      <input type="password" name="password" id="retypePassword" class="inputPassword"
+      placeholder="Re-Enter your Password"
+      required>
+      <small class="reTypePasswordErrorMsg">should be small</small>
+    </div> -->
     <div class="form-input">
-      <label for="password">Retype Password</label>
-      <input type="password" name="password" id="password">
+      <button type="submit" class="submitButton">Submit</button>
     </div>
-    <div class="form-input">
-      <button type="button">Submit</button>
-    </div>
-  </div>
+  </form>
 </body>
 </html>
