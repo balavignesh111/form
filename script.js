@@ -47,6 +47,7 @@ function addingSuccessMsg(element1,element2){
 }
 
 function result(){
+  //username
   if(userNameElement.value !== ''){
     if(userNameElement.value.trim().length < 5){
       addingErrorMsg(userNameElement,userNameMsgElement);
@@ -130,6 +131,7 @@ function result(){
 //event listeners
 
 
-submitBtnElement.addEventListener('click',()=>{
+submitBtnElement.addEventListener('click',(event)=>{
+  event.preventDefault();
   result();
 });
